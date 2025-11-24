@@ -130,8 +130,9 @@ class MyHomePage extends StatelessWidget {
                 ),
                 //Tab(),
                 TabBar(
+                  dividerColor: Colors.transparent,
                   tabs: [
-                    Tab(icon: Icon(Icons.home), text: "Home"),
+                    Tab(icon: Icon(Icons.home), text: "All"),
                     Tab(icon: Icon(Icons.star), text: "Favorites"),
                     Tab(icon: Icon(Icons.person), text: "Profile"),
                   ],

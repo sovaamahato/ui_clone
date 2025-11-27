@@ -137,13 +137,15 @@ class MyHomePage extends StatelessWidget {
                     Tab(icon: Icon(Icons.person), text: "Profile"),
                   ],
                 ),
-                Container(
-                  child: TabBarView(
-                    children: [
-                      Center(child: Text("Home Screen")),
-                      Center(child: Text("Favorite Screen")),
-                      Center(child: Text("Profile Screen")),
-                    ],
+                Expanded(
+                  child: Container(
+                    child: TabBarView(
+                      children: [
+                        Center(child: Text("Home Screen")),
+                        Center(child: Text("Favorite Screen")),
+                        Center(child: Text("Profile Screen")),
+                      ],
+                    ),
                   ),
                 ),
               ],

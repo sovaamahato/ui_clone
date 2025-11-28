@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:uiclone_app/views/tabs/tab1.dart';
+import 'package:uiclone_app/views/tabs/tab2.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -132,8 +134,8 @@ class MyHomePage extends StatelessWidget {
                 TabBar(
                   dividerColor: Colors.transparent,
                   tabs: [
-                    Tab(icon: Icon(Icons.home), text: "All"),
-                    Tab(icon: Icon(Icons.star), text: "Favorites"),
+                    Tab1(),
+                    Tab2(),
                     Tab(icon: Icon(Icons.person), text: "Profile"),
                   ],
                 ),

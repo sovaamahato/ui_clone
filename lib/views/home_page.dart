@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
                       const SizedBox(width: 12),
 
                       Text(
-                        'Sovaa Ksuhwaha',
+                        'Sovaa Kushwaha',
                         style: TextStyle(color: Colors.black54, fontSize: 15),
                       ),
                       Spacer(),
@@ -134,15 +134,15 @@ class MyHomePage extends StatelessWidget {
                 TabBar(
                   dividerColor: Colors.transparent,
                   tabs: [
-                    Tab1(),
-                    Tab2(),
+                    Tab(icon: Icon(Icons.home), text: "Home"),
+                    Tab(icon: Icon(Icons.favorite), text: "Favorite"),
                     Tab(icon: Icon(Icons.person), text: "Profile"),
                   ],
                 ),
                 Expanded(
                   child: TabBarView(
                     children: [
-                      Center(child: Text("Home Screen")),
+                      Tab1(),
                       Center(child: Text("Favorite Screen")),
                       Center(child: Text("Profile Screen")),
                     ],

@@ -5,6 +5,18 @@ class Tab2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Center(child: Text('This is Tab 2')));
+    return Container(
+      child: Column(
+        children: [
+          ListTile(
+            title: Text("Watch"),
+            subtitle: Text("Branded watch"),
+            leading: Icon(Icons.watch),
+          ),
+          ListTile(title: Text("Headphones"), leading: Icon(Icons.headset)),
+          ListTile(title: Text("Shoes"), leading: Icon(Icons.directions_run)),
+        ],
+      ),
+    );
   }
 }

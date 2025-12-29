@@ -143,7 +143,7 @@ class MyHomePage extends StatelessWidget {
                   child: TabBarView(
                     children: [
                       Tab1(),
-                      Center(child: Text("Favorite Screen")),
+                      Tab2(),
                       Center(child: Text("Profile Screen")),
                     ],
                   ),

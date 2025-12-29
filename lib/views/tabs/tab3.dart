@@ -5,6 +5,14 @@ class Tab2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Center(child: Text('This is Tab 2')));
+    return Container(
+      child: Column(
+        children: [
+          Text('This is Tab 3'),
+          SizedBox(height: 20),
+          Icon(Icons.fastfood, size: 50, color: Colors.orange),
+        ],
+      ),
+    );
   }
 }
